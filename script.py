@@ -27,7 +27,7 @@ try:
 
     # 🔹 Movendo o arquivo ZIP para o destino final
     step_start = time.time()
-    final_zip_path = os.path.join(destination_directory, "Backup Ger. Inteligência e Segmentação.zip")
+    final_zip_path = os.path.join(destination_directory, "TROCAR PELO NOME DO ARQUIVO")
     
     # 🔹 Remover ZIP anterior, caso exista
     if os.path.exists(final_zip_path):
