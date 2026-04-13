@@ -7,7 +7,7 @@ Script Python para compactar um diretório de origem em `.zip` com timestamp, mo
 ## ⚙️ Funcionalidades
 
 - Compacta um diretório inteiro em `.zip`
-- Nomeia o arquivo com data e hora — ex: `Backup_Ger_Inteligencia_20240415_143022.zip`
+- Nomeia o arquivo com data e hora — ex: `Backup_Ger_20240415_143022.zip`
 - Valida a integridade do ZIP gerado (existência e tamanho)
 - Move o ZIP para o diretório de destino
 - Remove backups antigos automaticamente, mantendo apenas os N mais recentes
@@ -27,7 +27,7 @@ Script Python para compactar um diretório de origem em `.zip` com timestamp, mo
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/SEU_USUARIO/NOME_DO_REPO.git
+   git clone https://github.com/eudesscj/backup_directory.git
    ```
 
 2. Configure as variáveis no início do script:
@@ -35,7 +35,7 @@ Script Python para compactar um diretório de origem em `.zip` com timestamp, mo
    source_directory      = r"C:\caminho\origem"
    destination_directory = r"C:\caminho\destino"
    temp_directory        = r"C:\caminho\temp"
-   backup_prefix         = "Backup_Ger_Inteligencia"  # Prefixo do nome do arquivo
+   backup_prefix         = "Backup_Ger"                # Prefixo do nome do arquivo
    max_backups           = 7                           # Quantidade de backups a manter
    ```
 
@@ -78,7 +78,7 @@ backup-script/
 2024-04-15 14:30:22 - INFO - 🚀 Iniciando processo de backup...
 2024-04-15 14:30:22 - INFO -    Origem  : C:\dados\origem
 2024-04-15 14:30:22 - INFO -    Destino : C:\dados\destino
-2024-04-15 14:30:22 - INFO -    Arquivo : Backup_Ger_Inteligencia_20240415_143022.zip
+2024-04-15 14:30:22 - INFO -    Arquivo : Backup_Ger_20240415_143022.zip
 2024-04-15 14:30:25 - INFO - ✅ Compactação concluída (3.12s)
 2024-04-15 14:30:25 - INFO - ✅ ZIP validado — tamanho: 245.80 MB
 2024-04-15 14:30:26 - INFO - ✅ Arquivo salvo em: C:\dados\destino\Backup_..._20240415_143022.zip (0.95s)
